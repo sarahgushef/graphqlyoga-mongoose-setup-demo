@@ -1,0 +1,14 @@
+type Query {
+    user: [User!]!
+    greeting: String
+}
+
+type Mutation {
+    createPerson(firstName: String!, lastName: String!): User
+}
+
+type User {
+    id: ID
+    firstName: String!
+    lastName: String!
+}
